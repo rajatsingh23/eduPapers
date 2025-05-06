@@ -37,14 +37,6 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/papers', require('./routes/paperRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 
-// Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-}
 
 // Error handler middleware
 app.use((err, req, res, next) => {

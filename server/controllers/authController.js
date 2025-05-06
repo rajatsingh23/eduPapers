@@ -118,11 +118,13 @@ exports.login = (req, res, next) => {
 exports.logout = (req, res) => {
   res.clearCookie('jwt', {
     httpOnly: true,
-    expires: new Date(0)
+    secure: true,            // must match cookie set during login
+    sameSite: 'None',        // must match too
   });
-  
+
   res.status(200).json({ message: 'Logged out successfully' });
 };
+
 
 //Reset Password
 exports.reset = async (req,res) => {
