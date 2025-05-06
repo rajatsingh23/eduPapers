@@ -9,13 +9,15 @@ const upload = require('../middleware/upload');
 router.get('/', paperController.getQuestionPapers);
 
 // Get question paper by ID
+router.get('/user/:uploadedById', paperController.getQuestionPaperByUserId);
+
+// Get question paper by ID
 router.get('/:id', paperController.getQuestionPaperById);
 
 //Delete question paper by ID
 router.delete('/:id', paperController.deleteQuestionPaperById);
 
-// Get question paper by ID
-router.get('/user/:uploadedById', paperController.getQuestionPaperByUserId);
+
 
 
 
