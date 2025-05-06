@@ -32,17 +32,18 @@ const Footer = () => {
             </ul>
           </div>
           
+
           
           <div className="col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
+            <h3 className="font-semibold text-lg mb-4">Made By</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-primary">
+              <a href="https://x.com/rajatsingh_23"  target="_blank" className ="text-gray-600 hover:text-primary">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-primary">
+              <a href="https://www.linkedin.com/in/rajat-singh23/" target="_blank" className="text-gray-600 hover:text-primary">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-primary">
+              <a href="https://github.com/rajatsingh23" target="_blank" className="text-gray-600 hover:text-primary">
                 <Github size={20} />
               </a>
             </div>
@@ -54,10 +55,10 @@ const Footer = () => {
             © {new Date().getFullYear()} EduPapers. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="https://www.privacypolicies.com/live/f7df47ef-0baa-4ab3-802d-c7a72a9b3833" className="text-gray-500 text-sm hover:text-primary">
+            <Link to="/privacy" className="text-gray-500 text-sm hover:text-primary">
               Privacy Policy
             </Link>
-            <Link to="https://www.privacypolicies.com/live/c05921d8-6559-41b5-adb7-113dc71365c0" className="text-gray-500 text-sm hover:text-primary">
+            <Link to="/terms" className="text-gray-500 text-sm hover:text-primary">
               Terms of Service
             </Link>
           </div>
