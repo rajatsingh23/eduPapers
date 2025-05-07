@@ -138,10 +138,6 @@ const RegisterPage = () => {
                   />
                   <Label htmlFor="terms" className="text-sm text-gray-600">
                     I agree to the{" "}
-                    <Link to="https://www.privacypolicies.com/live/c05921d8-6559-41b5-adb7-113dc71365c0" className="text-primary hover:underline">
-                      Terms of Service
-                    </Link>{" "}
-                    and{" "}
                     <Link to="https://www.privacypolicies.com/live/f7df47ef-0baa-4ab3-802d-c7a72a9b3833" className="text-primary hover:underline">
                       Privacy Policy
                     </Link>

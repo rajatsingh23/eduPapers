@@ -55,11 +55,8 @@ const Footer = () => {
             © {new Date().getFullYear()} EduPapers. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy" className="text-gray-500 text-sm hover:text-primary">
+            <Link to="https://www.privacypolicies.com/live/f7df47ef-0baa-4ab3-802d-c7a72a9b3833" className="text-gray-500 text-sm hover:text-primary">
               Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-gray-500 text-sm hover:text-primary">
-              Terms of Service
             </Link>
           </div>
         </div>
