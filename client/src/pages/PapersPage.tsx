@@ -32,9 +32,7 @@ const PapersPage = () => {
       filters.semester
     ),
   });
-  console.log(data)
   const papers = data?.papers || [];
-  console.log(papers)
   const totalPages = data?.totalPages || 1;
   
   // Extract unique values for filter dropdowns with proper type casting

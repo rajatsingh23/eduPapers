@@ -25,7 +25,6 @@ const HomePage = () => {
   const recentPapers = data?.papers || [];
 
   const handleDownload = async (id: string, fileUrl: string) => {
-    console.log('id', id);
     try {
       await refetch();
       const paper = recentPapers.find((p: QuestionPaper) => p._id === id);
@@ -41,8 +40,6 @@ const HomePage = () => {
       // Generate filename from URL
       const urlParts = fileUrl.split('/');
       const fileName =  paper.course + '.' + urlParts[urlParts.length - 1].split('?')[0].split('.')[1];
-      console.log('urlParts', paper.course)
-      console.log(fileName)
   
       // Create a temporary blob URL
       const blobUrl = URL.createObjectURL(blob);
