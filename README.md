@@ -5,7 +5,7 @@ EduPapers is a MERN stack web application that allows students to upload and dow
 
 
 🚀 Live Demo
-🌐 https://www.edupapers.onrender.com
+🌐 https://edupapers.onrender.com/
 
 📌 Features
 🔐 User authentication (login, register, password reset via email)
